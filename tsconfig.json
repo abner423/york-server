@@ -1,0 +1,14 @@
+{
+    "include": [
+        "src",
+        "tests"
+    ],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "es2017",
+        "module": "commonjs",
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true
+    }
+}

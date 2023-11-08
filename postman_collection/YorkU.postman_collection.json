@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "d3d72900-92a4-4eb2-9740-baf750f75e9c",
+		"name": "YorkU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20473847"
+	},
+	"item": [
+		{
+			"name": "[USER && ADMIN] Get Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRhZGtEZUVlIiwiZW1haWwiOiJhYm5lci5mLmMuckBob3RtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODY3MTIxOSwiZXhwIjoxNjg4ODQ0MDE5fQ.80LPUK4MgXTOkfoDFZPX5wVhhPHmoKk5bS4M0ybuiwE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[USER] Get Single User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRhZGtEZUVlIiwiZW1haWwiOiJhYm5lci5mLmMuckBob3RtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODY3MTIxOSwiZXhwIjoxNjg4ODQ0MDE5fQ.80LPUK4MgXTOkfoDFZPX5wVhhPHmoKk5bS4M0ybuiwE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[ADMIN] Get Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRhZGtEZUVlIiwiZW1haWwiOiJhYm5lci5mLmMuckBob3RtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODY3MTIxOSwiZXhwIjoxNjg4ODQ0MDE5fQ.80LPUK4MgXTOkfoDFZPX5wVhhPHmoKk5bS4M0ybuiwE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[USER] Get Levels",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRhZGtEZUVlIiwiZW1haWwiOiJhYm5lci5mLmMuckBob3RtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODY3MTIxOSwiZXhwIjoxNjg4ODQ0MDE5fQ.80LPUK4MgXTOkfoDFZPX5wVhhPHmoKk5bS4M0ybuiwE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3333/levels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"levels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[USER && ADMIN] Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"abner.f.c.r@hotmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[USER] Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullName\": \"Abner Filipe Cunha Ribeiro\",\n    \"email\": \"abner.f.c.r@hotmail.com\",\n    \"phone\": \"61999999999\",\n    \"password\": \"123456\",\n    \"affiliation\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[ADMIN] Create Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRhZGtEZUVlIiwiZW1haWwiOiJhYm5lci5mLmMuckBob3RtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODY3MTIxOSwiZXhwIjoxNjg4ODQ0MDE5fQ.80LPUK4MgXTOkfoDFZPX5wVhhPHmoKk5bS4M0ybuiwE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Basketball Game\",\n    \"date\": \"2023-07-06T12:34:56.789Z\",\n    \"hourMen\": \"7 pm\",\n    \"hourWomen\": \"8 pm\",\n    \"local\": \"York University\",\n    \"color\": \"#FFFF\",\n    \"description\": \"Nice Game\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
